@@ -17,6 +17,7 @@ with open(dataset, 'r') as file:
             if len(top_3_calorie_counts) > 3:
                 top_3_calorie_counts.pop(3)
 
+# We need to add the final line in the file too!
 top_3_calorie_counts.append(current_count)
 top_3_calorie_counts.sort(reverse=True)
 top_3_calorie_counts.pop(3)
